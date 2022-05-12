@@ -27,11 +27,3 @@ def welcome():
         return render_template('welcome.html')
     except TemplateNotFound:
         abort(404)
-
-
-@simple_pages.route('/<page>')
-def show(page):
-    try:
-        return render_template('%s.html' % page)
-    except TemplateNotFound:
-        abort(404)
