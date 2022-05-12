@@ -2,7 +2,7 @@
 import os
 
 import flask_login
-from flask import Flask
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_mail import Mail
 from flask_cors import CORS
@@ -15,7 +15,7 @@ from app.db import database
 from app.db import db
 from app.db.models import User
 from app.error_handler import error_handlers
-from app.log_config import log_con, LOGGING_CONFIG
+from app.logging_config import log_con, LOGGING_CONFIG
 from app.simple_pages import simple_pages
 
 

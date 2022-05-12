@@ -8,7 +8,7 @@ import flask
 from flask import request, current_app
 
 from app import config
-from app.log_config.log_formatter import RequestFormatter
+from app.logging_config.log_formatters import RequestFormatter
 
 log_con = flask.Blueprint('log_con', __name__)
 
