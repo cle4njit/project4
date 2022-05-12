@@ -1,5 +1,7 @@
 """A simple flask web app"""
 import os
+
+
 from flask import Flask
 from app.cli import create_database
 from app.db import db
